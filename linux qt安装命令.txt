@@ -1,0 +1,13 @@
+解压： 
+xz -d qtbase-opensource-src-5.9.6.tar.xz
+tar xf qtbase-opensource-src-5.9.6.tar
+ 
+./configure -prefix /opt/Qt5.9.6 -confirm-license -opensource -no-gui -no-opengl -no-dbus -no-qpa -no-openssl -no-iconv  -no-icu  -no-zlib -no-libjpeg -no-libpng -no-xcb -no-freetype  -no-harfbuzz -nomake examples  -nomake tests 
+
+make 
+make install
+ 
+
+
+ps:压缩包拷贝到linux服务器命令行解压，不要在windows服务器解压
+./configure -prefix /opt/Qt5.9.6 -confirm-license -opensource -no-gui -no-opengl -no-dbus -no-qpa -no-openssl -no-iconv -no-icu -no-zlib -no-libjpeg -no-libpng -no-xcb -no-freetype -no-harfbuzz -nomake examples -nomake tests
